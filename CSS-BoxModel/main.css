@@ -1,0 +1,22 @@
+/*
+Sources:
+  CSS box model for beginner: Unlocking the magic of CSS
+  - https://hackernoon.com/css-box-model-45ecf4ac219e
+*/
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  /* 5 main aspects of CSS box */
+  width: 100px;                    /* Space from left to right. Default: (block-level) 100% of container (in-line) content need (cannot be fixed)*/
+  height: 100px;                   /*  */
+  padding: 0;                    /*  */
+  border: 0;                    /*  */
+  margin: 0;                    /*  */
+
+  /* formatting */
+  background: gray;
+}
