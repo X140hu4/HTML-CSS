@@ -3,20 +3,140 @@ Sources:
   CSS box model for beginner: Unlocking the magic of CSS
   - https://hackernoon.com/css-box-model-45ecf4ac219e
 */
-
-body{
-  display: flex;
-  justify-content: center;
+/*
+html,body,p,div,img,h1,h2,h3,h4,li,ul,dl,dd,dt,form,table,td,tr{
+  margin:0;
+  padding:0;
+  border:0;
+  border-collapse:0;
+  border-spacing:0;
 }
 
-.box{
-  /* 5 main aspects of CSS box */
-  width: 100px;                    /* Space from left to right. Default: (block-level) 100% of container (in-line) content need (cannot be fixed)*/
-  height: 100px;                   /*  */
-  padding: 0;                    /*  */
-  border: 0;                    /*  */
-  margin: 0;                    /*  */
+input,select{
+  margin:0;
+  padding:0;
+}
+*/
 
+div{
   /* formatting */
-  background: gray;
+  color: white;
+}
+
+/*##########################
+#######   Width     ########
+############################*/
+/* Width is not set, box takes all the space */
+.box1{
+  /* formatting */
+  background: darkviolet;
+}
+
+/* Width is set to 200px, takes only 200px*/
+.box2{
+  width: 200px;                    /* Space from left to right. Default: (block-level) 100% of container (in-line) content (cannot be fixed)*/
+  /* formatting */
+  background: blue;
+}
+
+/*##########################
+#######   Height    ########
+############################*/
+
+/* Height is not set, box adapts to content */
+.box3{
+  /* formatting */
+  background: darkviolet;
+}
+
+.box4{
+  width: 200px;
+  height: 200px;                    /* Vertival. Default: content */
+  /* formatting */
+  background: blue;
+}
+
+span.box4{
+  width: 200px;
+  height: 200px;
+  color: white;
+  background: green;
+}
+
+/*##########################
+#######   Border    ########
+############################*/
+
+/* Border is not set, box does not show border. */
+.box5{
+  /* formatting */
+  background: darkviolet;
+}
+
+.box6{
+  width: 200px;
+  height: 200px;                    /* Vertival. Default: content */
+  border: 5px solid hotpink;        /* Around element. */
+  /* formatting */
+  background: blue;
+}
+
+span.box6{
+  width: 200px;
+  height: 200px;
+  color: white;
+  background: green;
+}
+
+/*##########################
+#######   Padding    ########
+############################*/
+
+/* Border is not set, box does not show border. */
+.box7{
+  /* formatting */
+  background: darkviolet;
+}
+
+.box8{
+  width: 200px;
+  height: 200px;                    /* Vertival. Default: content */
+  border: 5px solid hotpink;        /* Around element. */
+  padding: 25px;                    /* inside the border */
+  /* formatting */
+  background: blue;
+}
+
+span.box8{
+  width: 200px;
+  height: 200px;
+  color: white;
+  background: green;
+}
+
+/*##########################
+#######   Margin    ########
+############################*/
+
+/* Border is not set, box does not show border. */
+.box9{
+  /* formatting */
+  background: darkviolet;
+}
+
+.box10{
+  width: 200px;
+  height: 200px;                    /* Vertival. Default: content */
+  border: 5px solid hotpink;        /* Around element. */
+  padding: 25px;                    /* inside the border */
+  margin: 20px;                     /* around the border */
+  /* formatting */
+  background: blue;
+}
+
+span.box10{
+  width: 200px;
+  height: 200px;
+  color: white;
+  background: green;
 }

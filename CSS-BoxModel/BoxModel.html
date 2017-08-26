@@ -12,7 +12,72 @@ Sources:
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <div class="box">&nbsp;<div>
+    <h2>Let's see how width works!</h2>
+    <section>
+      <div class="box1">Width is not set on div. Takes all the available horizontal space.<div>
+    </section>
+    <br>
+    <section>
+      <div class="box2">Width is set to 200px.<div>
+    </section>
+
+    <br>
+    <h2>Let's see how height works!</h2>
+    <section>
+      <div class="box3">
+        Height is not set on div. Height adapts to the content.<br>
+        Having a second line increase the height.
+      <div>
+    </section>
+    <br>
+    <section>
+      <div class="box4">Height is set to 200px.<div>
+    </section>
+    <br>
+    <span class="box4">This is a span. Height and width are not affected by the style.</span>
+
+    <br>
+    <h2>Let's see how border works!</h2>
+    <section>
+      <div class="box5">
+        Border is not set on div. Box width is 0, so it does not show up. <br>
+        Border property needs: width, style and type.
+      <div>
+    </section>
+    <br>
+    <section>
+      <div class="box6">Border is set to 5px, solid, hotpink.<div>
+    </section>
+    <br>
+    <span class="box6">This is a span. Height and width are not affected by the style.</span>
+
+    <br>
+    <h2>Let's see how Padding works!</h2>
+    <section>
+      <div class="box7">
+        Padding is not set on div. Padding is 0, so it does not add space between the height/width box and the border.
+      <div>
+    </section>
+    <br>
+    <section>
+      <div class="box8">Padding is set to 25px. Space is created between the content and the border.<div>
+    </section>
+    <br>
+    <span class="box8">This is a span. Height and width are not affected by the style.</span>
+
+    <br>          <!-- Had to add one br because the padding seems to mess up the vertical spacing -->
+    <br>
+    <h2>Let's see how Margin works!</h2>
+    <section>
+      <div class="box9">
+        Margin is not set on div. Margin is 0, so it does not add space between this element and the one surrounding it.
+      <div>
+    </section>
+    <br>
+    <section>
+      <div class="box10">Margin is set to 25px. Space is created between the border of this element and the elements around.<div>
+    </section>
+    <br>
+    <span class="box10">This is a span. It is not affected by margin-top and margin-bottom.</span>
   </body>
 </html>
-]
