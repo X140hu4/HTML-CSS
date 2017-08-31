@@ -5,32 +5,340 @@
   <head>
     <meta charset="utf-8">
     <title>Manipulating Blocks</title>
+    <link rel="stylesheet" href="block.css">
   </head>
   <body>
     <h3>Types of block level elements</h1>
-    <ul>
-      <li>p</li>
-      <li>h1, h2, h3, h4, h5, h6</li>
-      <li>ol, ul</li>
-      <li>pre</li>
-      <li>address</li>
-      <li>blockquote</li>
-      <li>dl</li>
-      <li>div</li>
-      <li>fieldset</li>
-      <li>form</li>
-      <li>hr</li>
-      <li>noscript</li>
-      <li>table</li>
-    </ul>
+    <ol>
+      <li><a href="#paragraph">p</a></li>
+      <li><a href="#header">h1, h2, h3, h4, h5, h6</a></li>
+      <li><a href="#list">ol, ul</a></li>
+      <li><a href="#pre">pre</a></li>
+      <li><a href="#address">address</a></li>
+      <li><a href="#blockquote">blockquote</a></li>
+      <li><a href="#dl">dl</a></li>
+      <li><a href="#div">div</a></li>
+      <li><a href="#fieldset">fieldset</a></li>
+      <li><a href="#form">form</a></li>
+      <li><a href="#hr">hr</a></li>
+      <li><a href="#noscript">noscript</a></li>
+      <li><a href="#table">table</a></li>
+    </ol>
 
-    <div>
-      <h4>P is Paragraph</h4>
-      <p>paragraph1</p>
-      <p>paragraph2</p>
-    </div>
+    <hr>
 
-    <div>div2</div>
-    <div>div3</div>
+    <ol>
+      <li id="paragraph">
+        <h4><a href="https://www.w3schools.com/html/html_paragraphs.asp" target="_blank">&lt;p&gt; is Paragraph</a></h4>
+        <div>
+          <p>
+            <em>
+              Browsers automatically add a white space (margin) before and after a paragraph. Spaces, lines and line breaks are ignored.
+            </em>
+          </p>
+          <p>This is a paragraph</p>
+          <p>This is another paragraph</p>
+        </div>
+      </li>
+
+      <li id="header">
+        <h4><a href="https://www.w3schools.com/html/html_headings.asp" target="_blank">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; Heading level 1-6</a></h4>
+        <p>
+          <em>
+              Browsers automatically add a white space (margin) before and after a header. <br>
+              Search engines use headers to index the structure and the content of a page. <br>
+              The &lt;hr&gt; tag indicates a change in thematic break (most often displayed as a horizontal rule)
+          </em>
+        </p>
+        <div class="container">
+          <h1>This is &lt;h1&gt;</h1> <hr>
+          <h2>This is &lt;h2&gt;</h2> <hr>
+          <h3>This is &lt;h3&gt;</h3> <hr>
+          <h4>This is &lt;h4&gt;</h4> <hr>
+          <h5>This is &lt;h5&gt;</h5> <hr>
+          <h6>This is &lt;h6&gt;</h6> <hr>
+        </div>
+      </li>
+
+      <li id="list">
+        <h4><a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">Lists (unordered and ordered)</a></h4>
+        <h5>&lt;ul&gt; is an unordered list</h5>
+        <div class="container">
+          <div>
+            <ul style="list-style-type:disc">
+              <li>[list-style-type:disc] (default)</li>
+              <li>unordered list: item 1</li>
+              <li>unordered list: item 2</li>
+              <li>unordered list: item 3</li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            <ul style="list-style-type:circle">
+              <li>[list-style-type:circle]</li>
+              <li>unordered list: item 1</li>
+              <li>unordered list: item 2</li>
+              <li>unordered list: item 3</li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            <ul style="list-style-type:square">
+              <li>[list-style-type:square]</li>
+              <li>unordered list: item 1</li>
+              <li>unordered list: item 2</li>
+              <li>unordered list: item 3</li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            <ul style="list-style-type:none">
+              <li>[list-style-type:none]</li>
+              <li>unordered list: item 1</li>
+              <li>unordered list: item 2</li>
+              <li>unordered list: item 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <h5>&lt;ol&gt; is an ordered list</h5>
+        <div class="container">
+          <div>
+            <ol type="1">
+              <li>[type="1"]</li>
+              <li>ordered list: item 1</li>
+              <li>ordered list: item 2</li>
+              <li>ordered list: item 3</li>
+            </ol>
+          </div>
+          <br>
+          <div>
+            <ol type="A">
+              <li>[type="A"]</li>
+              <li>ordered list: item 1</li>
+              <li>ordered list: item 2</li>
+              <li>ordered list: item 3</li>
+            </ol>
+          </div>
+          <br>
+          <div>
+            <ol type="a">
+              <li>[type="a"]</li>
+              <li>ordered list: item 1</li>
+              <li>ordered list: item 2</li>
+              <li>ordered list: item 3</li>
+            </ol>
+          </div>
+          <br>
+          <div>
+            <ol type="I">
+              <li>[type="I"]</li>
+              <li>ordered list: item 1</li>
+              <li>ordered list: item 2</li>
+              <li>ordered list: item 3</li>
+            </ol>
+          </div>
+          <br>
+          <div>
+            <ol type="i">
+              <li>[type="i"]</li>
+              <li>ordered list: item 1</li>
+              <li>ordered list: item 2</li>
+              <li>ordered list: item 3</li>
+            </ol>
+          </div>
+        </div>
+      </li>
+      <li id="pre">
+        <h4><a href="https://www.sitepoint.com/everything-need-know-html-pre-element/" target="_blank">&lt;pre&gt; element</a></h4>
+        <p>
+          <em>
+            The &lt;pre&gt; element represents preformatted text. tab indents, double-spaces, newlines, and other typographic formatting are preserved. <br>
+            It can be used to show code snippets.
+          </em>
+        </p>
+        <pre>
+          text is
+          kept as typed (newline!)
+          double  space!
+            tab   indent!
+        </pre>
+
+        <h5>Example with code</h5>
+        <pre>
+          <code>&lt;nav class=&quot;main-navigation&quot;&gt;
+          &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;/nav&gt;</code>
+        </pre>
+      </li>
+
+      <li id="address">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address" target="_blank">&lt;address&gt; element</a></h4>
+        <p>
+          <em>
+            The &lt;address&gt; element defines the contact information for the author/ownder of a document (&lt;body&gt;) or article(&lt;article&gt;). <br>
+            Browser usally render the address in italic with a line break before and after.
+          </em>
+        </p>
+        <address>
+          You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+          If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+          You may also want to visit us:<br>
+          Mozilla Foundation<br>
+          1981 Landings Drive<br>
+          Building K<br>
+          Mountain View, CA 94043-0801<br>
+          USA
+        </address>
+      </li>
+
+      <li id="blockquote">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">&lt;blockquote&gt; element</a></h4>
+        <p>
+          <em>
+            The &lt;blockquote&gt; element <br>
+            attribute:
+            <ul style="list-style-type:none">
+              <li>
+                cite <br>
+                URL source or message for the quote.
+              </li>
+            </ul>
+          </em>
+        </p>
+        <blockquote cite="http://developer.mozilla.org">
+          <p>This is a quotation taken from
+          the Mozilla Developer Center.</p>
+        </blockquote>
+      </li>
+
+      <li id="dl">
+        <h4><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">&lt;dl&gt; element: Description list</a></h4>
+
+        <div class="container">
+          <div>
+            <h5>Single term and decription</h5>
+            <dl>
+              <dt>Firefox</dt>
+              <dd>
+                A free, open source, cross-platform,
+                graphical web browser developed by the
+                Mozilla Corporation and hundreds of
+                volunteers.
+              </dd>
+
+              <!-- Other terms and descriptions -->
+            </dl>
+          </div>
+
+          <div>
+            <h5>Multiple terms, single description</h5>
+            <dl>
+              <dt>Firefox</dt>
+              <dt>Mozilla Firefox</dt>
+              <dt>Fx</dt>
+              <dd>
+                A free, open source, cross-platform,
+                graphical web browser developed by the
+                Mozilla Corporation and hundreds of
+                volunteers.
+              </dd>
+
+              <!-- Other terms and descriptions -->
+            </dl>
+          </div>
+
+          <div>
+            <h5>Single term, multiple descriptions</h5>
+            <dl>
+              <dt>Firefox</dt>
+              <dd>
+                A free, open source, cross-platform,
+                graphical web browser developed by the
+                Mozilla Corporation and hundreds of
+                volunteers.
+              </dd>
+              <dd>
+                The Red Panda also known as the Lesser
+                Panda, Wah, Bear Cat or Firefox, is a
+                mostly herbivorous mammal, slightly larger
+                than a domestic cat (60 cm long).
+              </dd>
+
+              <!-- Other terms and descriptions -->
+            </dl>
+          </div>
+        </div>
+      </li>
+
+      <li id="div">
+        <h4><a href="" target="_blank">&lt;div&gt; element: Document division</a></h4>
+        <p>
+          <em>
+            The &lt;div&gt; element should be used only when no other semantic element (such as &lt;article&gt; or &lt;nav&gt;) is appropriate.
+          </em>
+        </p>
+        <div class="div2">This is a div, with no width nor height.</div>
+        <div class="div3">This is another div, with width at 400px.</div>
+      </li>
+
+      <li id="fieldset">
+        <h4><a href="" target="_blank">&lt;fieldset&gt; element</a></h4>
+        <p>
+          <em>
+            The HTML &lt;fieldset&gt; element is used to group several controls as well as labels (&lt;label&gt;) within a web form.
+          </em>
+        </p>
+        <fieldset style="width:200px;">
+          <legend>Fieldset with 200px width</legend>
+          <input type="radio" id="radio">
+          <label for="radio">Click me</label> <br>
+          <input type="radio" id="radio">
+          <label for="radio">or me</label>
+        </fieldset>
+
+
+      </li>
+
+      <li id="form">
+        <h4><a href="" target="_blank">&lt;form&gt; element</a></h4>
+        <p>
+          <em>
+
+          </em>
+        </p>
+      </li>
+
+      <li id="hr">
+        <h4><a href="" target="_blank">&lt;hr&gt; element</a></h4>
+        <p>
+          <em>
+
+          </em>
+        </p>
+      </li>
+
+      <li id="noscript">
+        <h4><a href="" target="_blank">&lt;noscript&gt; element</a></h4>
+        <p>
+          <em>
+
+          </em>
+        </p>
+      </li>
+
+      <li id="table">
+        <h4><a href="" target="_blank">&lt;table&gt; element</a></h4>
+        <p>
+          <em>
+
+          </em>
+        </p>
+      </li>
+    </ol>
   </body>
 </html>
