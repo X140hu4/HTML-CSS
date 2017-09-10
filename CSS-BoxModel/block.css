@@ -27,3 +27,7 @@ html, body {
 li{
   margin-bottom: 5px;
 }
+
+table, td, tr, th{
+  border: 1px solid black;
+}
